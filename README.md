@@ -1,1 +1,0 @@
-# danieljovenir.github.io
