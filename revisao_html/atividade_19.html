@@ -3,120 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 19</title>
+    <title>atividade 19</title>
 
     <style>
-        * {
+        body {
             margin: 0;
-            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
         }
-        
-        body{
-            background-color: white;
-        }   
-        .barra_cinza_topo{
-            width: auto;
-            height: 150px;
-            background-color:#DCDCDC;
-            margin-top: 5px;
-        }
-        .circulo_logo{
-            background: white;
-            border-radius: 50%;
-            width: 90px;
-            height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 30px;
-            right: 48%;    
-        }
-        .circulo_logo p{
-            font-size: 30px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: #696969;
-        }
-        .barra_menu_estilo{
-            width: auto;
-            height:50px;
-            background-color:#808080;
-
-
-        }
-        .barra_menu_estilo ul{
-            list-style: none;
-        }
-
-        .barra_menu_estilo ul li {
-            display: inline; 
-            text-align: center;   
-        }
-
-        .barra_menu_estilo ul li a{
-            text-decoration: none; 
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: white;
-            display: inline-block;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-        }
-        .campo_cinza_grande{
-            background-color: #D3D3D3;
-            width: auto;
-            height:400px
-        }
-        .campo_cinza_grande p{
-            font-size: 30px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: #696969;
-            text-align: center;  
-            margin-bottom: 5%;        
-        }
-
-        #menu {
+        .header {
             background-color: #ffffff;
-            padding: 20px 0;
+            color: rgb(0, 0, 0);
+            padding: 10px 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            border-top: 4px solid black;
+        }
+        .menu {
+            background-color: #ffffff;
+            padding: 15px 0;
             text-align: center;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
         }
-
         .menu-item {
             display: inline-block;
-            margin: 15px 50px;
-            color: #ffffff;
+            margin: 0 100px;
+            color: #333;
             text-decoration: none;
             font-weight: bold;
-            font-family:Arial, Helvetica, sans-serif;
+        }
+        .vitrine {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .item {
+            width: calc(25% - 20px);
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .item quadrado {
+            max-width: 100%;
+            height: auto;
+        }
+        .item h3 {
+            margin: 5px 0;
+        }
+        .item p {
+            margin: 5px 0;
+            color: #888;
+        }
+        .quadrado {
+            width: 338px;
+            height: 300px;
+            box-sizing: border-box;
             text-align: center;
+            background-color: #e5e3e3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mais{
+            width: calc(25% - 20px);
+            margin: 10px;
+            padding: 10px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mais p{
+            text-align: center;
+            background-color: #e5e3e3;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            width: calc(25% - 20px);
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: left;
         }
     </style>
 </head>
-    <body>
-        <!--ATIVIDADE 19-->
-        <header>
-            <div class="barra_cinza_topo"></div>
-
-            <div class="circulo_logo">
-                <p>LOGO</p>
-            </div>
-            <div class="barra_menu_estilo"> <!--Que se foda, não consigo alinhar a poha da tag <a> no centro da página-->
-                <div class="menu">
-                    <a class="menu-item">MENU</a>
-                    <a class="menu-item">MENU</a>
-                    <a class="menu-item">MENU</a>
-                    <a class="menu-item">MENU</a>
-                </div>
-            </div>
-        </header>
-        <div class="campo_cinza_grande">
-            <div class="campo_cinza_grande_item">
-                <p>PUBLICIDADE</p>
-                <p>UTILIZAR UMA IMAGEM AQUI</p>
-            </div>
+<body>
+    <div class="header">
+        <div class="logo"><h2>Logo</h2></div>
+        <div class="menu">
+            <a class="menu-item" href="#">Menu</a>
+            <a class="menu-item" href="#">Menu</a>
+            <a class="menu-item" href="#">Menu</a>
+            <a class="menu-item" href="#">Menu</a>
+            <a class="menu-item" href="#">Menu</a>
         </div>
+    </div>
 
-    </body>
+    <!--Linha 01-->
+    <div class="vitrine">
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 37 minutos</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 horas</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 4 horas</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 8 horas</p>
+            <h3>Título</h3>
+        </div>
+    </div>
+    <!--Linha 02-->
+    <div class="vitrine">
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 8 horas</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 12 horas</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à um dia</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à um dia</p>
+            <h3>Título</h3>
+        </div>
+    </div>
+      <!--Linha 03-->
+    <div class="vitrine">
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+    </div>
+    <!--Linha 04-->
+    <div class="vitrine">
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+        <div class="item">
+            <div class="quadrado">Foto</div>
+            <p>à 2 dias</p>
+            <h3>Título</h3>
+        </div>
+    </div>
+    
+    <div class="mais">
+        <p>Mais</p>
+    </div>
+</body>
 </html>
