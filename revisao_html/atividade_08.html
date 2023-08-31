@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 08</title>
+</head>
+<body>
+    <div>
+        <form action="/submit" method="post" style="border-style: dotted; border-color: red; padding: 5px;">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            Gênero:
+            <input type="radio" id="generoM" name="genero" value="M" required>
+
+            <label for="generoM">Masculino</label>
+            <input type="radio" id="generoF" name="genero" value="F" required>
+
+            <label for="generoF">Feminino</label> 
+            <input type="radio" id="generoF" name="genero" value="F" required>
+
+            <label for="generoF">Outro</label><br> 
+            <label>Estado Civil:</label>
+
+            <select id="estadoCivil" name="estadoCivil" required>
+                <option value="Solteiro">Solteiro(a)</option>
+                <option value="Casado">Casado(a)</option>
+                <option value="Outro">Viuvo(a)</option>
+                <option value="Outro">Não Informado</option>
+            </select><br> 
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
