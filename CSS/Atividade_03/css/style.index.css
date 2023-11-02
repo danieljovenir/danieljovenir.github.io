@@ -1,0 +1,9 @@
+body{
+    background: rgb(241, 14, 192);
+    background: linear-gradient(90deg, rgb(241, 14, 192) 0%, rgb(29, 253, 253) 50%, rgb(69, 252, 84) 100%);
+}
+
+.link-questoes{
+    text-decoration: none;
+    color: black;
+}
